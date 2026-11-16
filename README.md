@@ -59,7 +59,7 @@
 需要：macOS（录音转写和视频字幕对齐用 Apple 芯片上的 mlx-whisper，开机自启用 launchd）、Python 3.13 和 [uv](https://docs.astral.sh/uv/)、Node 22+、ffmpeg、已登录的 Claude Code。短视频第一次出片时会用 npx 下载 HyperFrames 和它的无头 Chrome（`npx hyperframes browser ensure`），字体（Noto Sans SC、Noto Serif SC、得意黑，都是 OFL 协议）第一次用到时下载到数据目录。可选：飞书的 lark-cli（飞书素材和留档）、Playwright 的 Chromium（知识星球扫码、画视频封面）、cloudflared（外网访问）。
 
 ```bash
-git clone https://github.com/garycaogan/content-workbench.git && cd content-workbench
+git clone https://github.com/garycaogan/gary-content-workbench.git && cd gary-content-workbench
 uv sync --extra transcribe            # 不需要录音转写就去掉 --extra transcribe
 (cd web && npm install && npm run build)
 .venv/bin/playwright install chromium # 只有知识星球扫码需要
